@@ -8,7 +8,9 @@
     </div>
   </nav>
   <main class="main">
-    <section></section>
+    <section>
+      
+    </section>
     <section></section>
   </main>
 </template>
@@ -49,12 +51,11 @@
 .main{
   
   section{
-    height: 100px;
     &:nth-child(2n+1){
-      background-color: #103C3B;
+      background-color: #17232E;
     }
     &:nth-child(2n){
-      background-color: #0F131A;
+      background-color: #131B23;
     }
   }
 }
