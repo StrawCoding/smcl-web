@@ -30,7 +30,7 @@
   left: 0px;
   width: 100dvw;
   height: 64px;
-  padding: 10px;
+  padding: 10px 15px;
 
   &>div>a{
     display: flex;
@@ -43,7 +43,7 @@
 
     h1{
       margin-left: 10px;
-      color: #FFFFF5DB;
+      color: #B0BEC5;
       align-self: center;
     }
   }
