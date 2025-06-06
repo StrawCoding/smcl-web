@@ -9,7 +9,7 @@
   </nav>
   <main class="main">
     <section>
-      
+
     </section>
     <section></section>
   </main>
@@ -51,6 +51,9 @@
 .main{
   
   section{
+    &:nth-child(1){
+      padding-top: 70px;
+    }
     &:nth-child(2n+1){
       background-color: #17232E;
     }
