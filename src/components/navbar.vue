@@ -3,12 +3,15 @@
     <div class="logo">
       <a href="/">
           <img src="/public/middlePNG.png" alt="">
-          <h1>StrawMinecraftLauncher</h1>
+          <h1>{{ web_title }}</h1>
       </a>
     </div>
     <div class="navbar-links">
       <a href="/">🏠首頁</a>
       <a href="/download">📩下載</a>
+    </div>
+    <div class="navbar-bar">
+      <i class="fa-solid fa-bars"></i>
     </div>
   </nav>
 </template>
@@ -63,12 +66,50 @@
       }
     }
   }
+  .navbar-bar{
+    display: none;
+  }
 
+}
+
+@media (max-width:750px) {
+  .navbar{
+    .navbar-links{
+      display: none;
+    }
+    .navbar-bar{
+      display: block;
+    }
+  }
 }
 </style>
 <script>
+import { ref, onMounted, watch } from 'vue';
 
 export default{
-    name:"navbar",
+  name:"navbar",
+
+  setup() {
+    const web_title = ref("StrawMinecraftLauncher");
+    const RWD = document.querySelector(".navbar-links");
+
+    function renewSize(){
+      if(window.innerWidth <= 750){
+        web_title.value = "SMCL";
+      }else{
+        web_title.value = "StrawMinecraftLauncher";
+      }
+    }
+
+    onMounted(() =>{
+      window.addEventListener("resize", renewSize)
+    })
+
+  
+    return {
+      web_title,
+      RWD,
+    }
+  }
 }
 </script>
