@@ -2,7 +2,7 @@
 <nav class="navbar">
     <div class="logo">
       <a href="/">
-          <img src="/public/middlePNG.png" alt="">
+          <img src="/public/middlePNG.svg" alt="">
           <h1>{{ web_title }}</h1>
       </a>
     </div>
