@@ -18,4 +18,5 @@ jobs:
       with: 
         branch: Web-Page
         folder: dist
+        single-page-app: true
     
