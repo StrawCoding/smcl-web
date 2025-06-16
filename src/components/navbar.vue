@@ -88,7 +88,7 @@
 }
 </style>
 <script>
-import { ref, onMounted, watch } from 'vue';
+import { ref, onMounted } from 'vue';
 
 export default{
   name:"navbar",
@@ -107,6 +107,7 @@ export default{
 
     onMounted(() =>{
       window.addEventListener("resize", renewSize)
+      renewSize();
     })
 
   
