@@ -1,0 +1,18 @@
+on: push
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 讀取倉庫
+      uses: actions/cheakout@4
+    - name: 環境安裝
+      run: npm install
+    - name: 打包
+      run: npm run build
+    - name: 發布分支 Web-Page
+      uses: James Ives/github-pages-deploy-action@v4
+      with: 
+        branch: Web-Page
+        folder: dist
+    
