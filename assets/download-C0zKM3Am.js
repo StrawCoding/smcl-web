@@ -1,0 +1,1 @@
+import{n}from"./navbar-DAN1HSlO.js";import{_ as a,d as e,r,o as t}from"./index-pO6-OXxW.js";const s={name:"downlaod",components:{navbar_vue:n},data(){return{}}};function c(_,p,d,m,u,f){const o=r("navbar_vue");return t(),e(o)}const i=a(s,[["render",c]]);export{i as default};
