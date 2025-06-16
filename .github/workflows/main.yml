@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 讀取倉庫
-      uses: actions/cheakout@v4
+      uses: actions/checkout@v4
     - name: 環境安裝
       run: npm install
     - name: 打包
