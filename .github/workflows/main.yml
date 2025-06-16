@@ -11,7 +11,7 @@ jobs:
     - name: 打包
       run: npm run build
     - name: 發布分支 Web-Page
-      uses: James Ives/github-pages-deploy-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4
       with: 
         branch: Web-Page
         folder: dist
