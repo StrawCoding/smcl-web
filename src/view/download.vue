@@ -1,5 +1,5 @@
 <template>
-    <navbar_vue />
+  <navbar_vue />
 </template>
 <style scoped>
 
@@ -8,14 +8,14 @@
 import navbar_vue from "../components/navbar.vue"
 
 export default{
-    name:"downlaod",
-    components: {
-        navbar_vue,
-    },
-    data(){
-        return{
+  name:"downlaod",
+  components: {
+    navbar_vue,
+  },
+  data(){
+    return{
 
-        }
     }
+  }
 }
 </script>

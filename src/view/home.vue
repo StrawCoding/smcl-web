@@ -15,15 +15,9 @@
     </section>
     <section></section>
   </main>
-  
+  <footer_vue />
 </template>
 <style scoped>
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Noto Sans TC", serif;
-}
 .main{
   section{
     background-color: #000000;  
@@ -61,6 +55,9 @@
           padding: 10px 20px;
           border-radius: 15px;
           border: 2px solid;
+          width: 125px;
+          display: flex;
+          justify-content: center;
 
 
           &:nth-child(1){
@@ -97,12 +94,14 @@
 </style>
 <script>
 import navbar_vue from "../components/navbar.vue";
+import footer_vue from "../components/footer.vue";
 
 export default{
   name : "home",
 
   components: {
     navbar_vue,
+    footer_vue,
   },
 
   data(){

@@ -11,17 +11,13 @@
       <a href="/download">📩下載</a>
     </div>
     <div class="navbar-bar">
-      <i class="fa-solid fa-bars"></i>
+      <a href="">
+        <i class="fa-solid fa-bars"></i>
+      </a>
     </div>
   </nav>
 </template>
 <style scoped>
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Noto Sans TC", serif;
-}
 .navbar{
   display: flex;
   align-items: center;
@@ -68,6 +64,14 @@
   }
   .navbar-bar{
     display: none;
+    a{
+      
+      i{
+        font-size: 32px;
+        color: #FFFFFF;
+      }
+    }
+
   }
 
 }
