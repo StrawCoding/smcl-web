@@ -1,1 +1,0 @@
-import{n}from"./navbar-Cit5sJFe.js";import{_ as a,d as e,r,o as t}from"./index-DUO1mnp2.js";const s={name:"downlaod",components:{navbar_vue:n},data(){return{}}};function c(_,p,d,m,u,f){const o=r("navbar_vue");return t(),e(o)}const i=a(s,[["render",c]]);export{i as default};
