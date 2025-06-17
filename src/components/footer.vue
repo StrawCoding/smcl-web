@@ -7,7 +7,7 @@
 .footer{
   width: 100%;
   height: 150px;
-  border-top: 3px solid #0D0D0D ;
+  border-top: 3px solid #1F1F1F ;
   background-color: #070707;
 }
 </style>
