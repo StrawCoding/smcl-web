@@ -5,6 +5,7 @@
       <div>
         <div class="hero-text">
           <h2>開源Mineraft啟動器</h2>
+          <hr>
           <p>新時代Minecraft啟動器，現代介面、跨平台應用</p>
         </div>
         <div class="hero-btn">
@@ -30,12 +31,16 @@
 
       .hero-text{
         justify-items: center;
+        margin: 0px 35px;
         margin-top: 100px;
 
         h2{
           font-size: 48px;
           display: flex;
           color: #FFFFFF;
+        }
+        hr{
+          display: none;
         }
         p{
           font-size: 28px;
@@ -79,14 +84,28 @@
 
     }
   }
-  /* 
-    &:nth-child(2n+1){
-      background-color: #17232E;
+}
+@media (max-width:660px) {
+  .main{
+    section{
+      &:nth-child(1){
+        .hero-text{
+          h2{
+            font-size: 32px;
+          }
+          hr{
+            width: 100%;
+            display: block;
+            margin: 3px 0px 10px 0px;
+
+          }
+          p{
+            font-size: 24px;
+          }
+        }
+      }
     }
-    &:nth-child(2n){
-      background-color: #131B23;
-    }
-  } */
+  }
 }
 
 
