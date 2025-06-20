@@ -13,10 +13,11 @@ jobs:
       run: npm install
     - name: 打包
       run: npm run build
+    - name: 複製 index.html 到"/"改名404.html
+      run: cp dist/index.html dist/404.html
     - name: 發布分支 Web-Page
       uses: JamesIves/github-pages-deploy-action@v4
       with: 
         branch: Web-Page
         folder: dist
-        single-page-app: true
     
