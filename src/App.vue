@@ -16,7 +16,7 @@ export default{
 
     onMounted(() => {
       if(isBeta){
-        window.alert("hihi! 歡迎來到SMCL，目前網站正在開發! \n有任何意見或bug歡迎回報：service@smcl.app \n 或使用Github回報");
+        window.alert("hihi! 歡迎來到SMCL，目前網站正在開發! \n有任何意見或bug歡迎回報：service@smcl.app \n或使用Github回報");
       }
     })
 
