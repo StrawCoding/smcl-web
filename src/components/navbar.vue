@@ -1,16 +1,16 @@
 <template>
 <nav class="navbar">
     <div class="logo">
-      <a href="/">
+      <router-link to="/">
           <img src="/src/assets/img/middlePNG.svg" alt="">
           <h1>{{ web_title }}</h1>
-      </a>
+      </router-link>
     </div>
     <div class="navbar-links">
-      <a href="/">🏠首頁</a>
-      <a href="/download">📩下載</a>
+      <router-link to="/">🏠首頁</router-link>
+      <router-link to="/download">📩下載</router-link>
     </div>
-    <div class="navbar-bar">
+    <div class="navbar-btn">
       <a href="#" @click="$emit('toggle-sidebar')" class="sidebar_toggle_bth">
         <i class="fa-solid fa-bars"></i>
       </a>
@@ -62,7 +62,7 @@
       }
     }
   }
-  .navbar-bar{
+  .navbar-btn{
     display: none;
     margin: 0px 15px;
     a{
@@ -82,7 +82,7 @@
     .navbar-links{
       display: none;
     }
-    .navbar-bar{
+    .navbar-btn{
       display: block;
     }
   }

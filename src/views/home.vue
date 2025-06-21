@@ -17,7 +17,7 @@
           <p>新時代Minecraft啟動器，現代介面、跨平台應用</p>
         </div>
         <div class="hero-btn">
-          <a href="/download">啟動器下載</a>
+          <router-link to="/download">啟動器下載</router-link>
           <a href="https://github.com/StrawCoding/smcl-web" target="_blank">Github</a>
         </div>
       </div>
