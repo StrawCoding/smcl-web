@@ -1,5 +1,13 @@
 <template>
-  <navbar_vue />
+  <!-- 接收navbar_vue的事件 -->
+  <navbar_vue 
+    @toggle-sidebar="sidebarOpen = !sidebarOpen; console.log(sidebarOpen);"
+  />
+  <!-- 傳入sidebarOpen -->
+  <!-- :sidebar-open="sidebarOpen" 的 :sidebar-open只是一個用來傳入的模板 -->
+  <sidebar_vue 
+    v-bind:sidebar-open="sidebarOpen" 
+  />
   <main class="main">
     <section class="hero">
       <div>
@@ -112,20 +120,26 @@
 
 </style>
 <script>
+import {ref} from "vue";
+
 import navbar_vue from "../components/navbar.vue";
 import footer_vue from "../components/footer.vue";
+import sidebar_vue from "../components/sidebar.vue"
 
 export default{
   name : "home",
-
+  
   components: {
     navbar_vue,
     footer_vue,
+    sidebar_vue,
   },
 
-  data(){
-    return{
+  setup(){
+    const sidebarOpen = ref(false);
 
+    return{
+      sidebarOpen,
     }
   }
 }

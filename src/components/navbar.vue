@@ -11,7 +11,7 @@
       <a href="/download">📩下載</a>
     </div>
     <div class="navbar-bar">
-      <a href="#" @click="sidebar_toggle" class="sidebar_toggle_bth">
+      <a href="#" @click="$emit('toggle-sidebar')" class="sidebar_toggle_bth">
         <i class="fa-solid fa-bars"></i>
       </a>
     </div>
@@ -98,7 +98,6 @@ export default{
     const web_title = ref("StrawMinecraftLauncher");
     const RWD = document.querySelector(".navbar-links");
 
-    const sidebar_toggle_bth = document.querySelector(".sidebar_toggle_bth")
 
     function renewSize(){
       if(window.innerWidth <= 750){
@@ -106,9 +105,6 @@ export default{
       }else{
         web_title.value = "StrawMinecraftLauncher";
       }
-    }
-    function sidebar_toggle(){
-      sidebar_toggle_bth.classList.toggle(".active")  
     }
 
     onMounted(() =>{
@@ -120,7 +116,6 @@ export default{
     return {
       web_title,
       RWD,
-      sidebar_toggle,
     }
   }
 }
