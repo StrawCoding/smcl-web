@@ -71,6 +71,7 @@
           width: 125px;
           display: flex;
           justify-content: center;
+          align-items: center;
 
 
           &:nth-child(1){
