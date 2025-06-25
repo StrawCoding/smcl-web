@@ -33,7 +33,7 @@
 
     &:nth-child(1){
       padding-top: 80px;
-      height: 100dvh;
+      height: 100vh;
       display: flex;
       justify-content: center;
 
